@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+double ploshad(double *base, double *height) {
+    return 0.5 * (*base) * (*height);
+}
+int main() {
+    double side, h;
+
+    cout << "--- Test Task 2 ---" << endl;
+    cout << "Storona: " << endl;
+    cin >> side;
+    cout << "Visota: "  << endl;
+    cin >> h;
+    
+    double area = ploshad(&side, &h);
+    cout << "ploshad treugolnika: " << area << endl;
+    
+    return 0;
+}
